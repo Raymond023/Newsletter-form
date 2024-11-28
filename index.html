@@ -6,6 +6,9 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="/styles.css">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
     
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -34,9 +37,12 @@
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-          <form action="" novalidate>
+          <form action="#" novalidate>
          
-            <label for="email">Email address</label> <br>
+            
+            <label for="email">Email address</label>
+            <span class="error">valid email required</span> <br>
+
             <input id="email" type="email" placeholder="email@company.com" name="email">
 
             <input id="submit" type="submit" value="Subscribe to monthly newsletter">            
@@ -64,7 +70,7 @@
         </h1>
         
         <p>
-          A confirmation email has been sent to <span id="userEmail">ash@loremcompany.com</span>. 
+          A confirmation email has been sent to <span id="user-email"></span>. 
         Please open it and click the button inside to confirm your subscription.
         </p>
         <span id="dismiss" role="button" aria-label="dismiss">Dismiss message</span>
