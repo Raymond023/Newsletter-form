@@ -32,7 +32,7 @@ window.onload = function () {
             submit.click(function () {
                 userEmail.textContent = input[0].value
                 signUp.css({'display': 'none'});
-                success.css({'display': 'inline'});
+                success.css({'display': 'block'});
             });
 
             dismissMessage.click(function() {
